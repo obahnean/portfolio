@@ -1,2 +1,2 @@
 # Ovidiu Bahnean's website
-link: https://bit.ly/ovidiubahnean
+link:   https://bit.ly/ovidiubahnean
