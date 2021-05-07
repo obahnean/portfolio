@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ovidiu Bahnean</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">projects</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>ovidiu bahnean</h1>
+        <h2>software developer / team player / human</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">projects</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+                <tr>
+                    <!-- <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.facebook.com/bahny99" target="_blank"><i class="fab fa-facebook" ></i></a></td> -->
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://www.linkedin.com/in/ovidiubah/" target="_blank" title="my linkedin profile"><i class="fab fa-linkedin fa-2x"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://github.com/obahnean" target="_blank" title="my github account"><i class="fab fa-github fa-2x"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="./Ovidiu_Bahnean_Resume.pdf" target="_blank" title="my resume"><i class="fa fa-file fa-2x"></i></a></td> 
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>projects</h1>
+
+        <p><small><em><strong>disclaimer: this section contains just my very own side projects. for a full overview of my experience, please  check my resume </strong></em>
+               
+        </small> <a href="./Ovidiu_Bahnean_Resume.pdf" target="_blank" >here</a> <small>.</small></p>
+        <section>            
+            <h2>todoey</h2>
+            <p>
+               single page application, created to keep up with the daily tasks. you can create your custom lists where tasks like 
+               adding or deleting a duty are made trivial.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;html5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;css3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;nodejs</div>
+                <div><i class="fas fa-circle"></i>&nbsp;express</div>
+                <div><i class="fas fa-circle"></i>&nbsp;mongodb</div>
+            </div>
+            <button class="btn_one" onclick=" window.open('https://github.com/obahnean/toDoList','_blank')">source code</button>
+            <button class="btn_two" onclick=" window.open('https://fierce-escarpment-47139.herokuapp.com/','_blank')">demo</button>
+        </section>
+        <section>            
+            <h2>coronavirus analisys us</h2>
+            <p>
+                i believe the media does not accurately report the news and i decided to inform myself from the john hopkins university api.
+                please be patient and refresh the page if you get an error. there is nothing wrong with the code, it is from caching.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;html5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;css3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;jquery</div>
+                <div><i class="fas fa-circle"></i>&nbsp;google charts api</div>
+            </div>
+            <button class="btn_one" onclick=" window.open('https://github.com/obahnean/CoronaVirus/blob/master/coronaMap.html','_blank')">source code</button>
+            <button class="btn_two"onclick=" window.open('https://obahnean.github.io/CoronaVirus/coronaMap.html','_blank')">demo</button>
+        </section>
+        <section>            
+            <h2>coronavirus analisys around the world</h2>
+            <p>
+                same thing as above, but around the world, and this time displayed on google maps. feel free to zoom in and check for the
+                region you care.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;html5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;css3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;jquery</div>
+                <div><i class="fas fa-circle"></i>&nbsp;google maps api</div>
+            </div>
+            <button class="btn_one" onclick=" window.open('https://github.com/obahnean/CoronaVirus/blob/master/Corona2.html')">source code</button>
+            <button class="btn_two" onclick=" window.open('https://obahnean.github.io/CoronaVirus/Corona2.html')">demo</button>
+        </section>
+        <section>            
+            <h2>flashy</h2>
+            <p>
+               gui application written in python that helps you to learn words in french. hence there is no demo, please check <a href = 'https://github.com/obahnean/flashy/blob/main/flash1.PNG' target='_blank'>here</a> or <a href = 'https://github.com/obahnean/flashy/blob/main/flash2.PNG' target='_blank'>here</a>. 
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;python</div>
+            </div>
+              
+            <button class="btn_one" onclick=" window.open('https://github.com/obahnean/flashy')">source code</button>
+            <!-- <button class="btn_two">button 2</button> -->
+        </section>
+        <section>            
+            <h2>password manager</h2> 
+            <p>
+               gui application written in python that keeps track of the different passwords i have for accounts on multiple websites.
+               again, since there is no demo, please check the images <a href = 'https://github.com/obahnean/password-manager/blob/main/pass1.PNG' target='_blank'>here</a> ,
+               <a href = 'https://github.com/obahnean/password-manager/blob/main/pass2.PNG' target='_blank'>here</a> or
+               <a href = 'https://github.com/obahnean/password-manager/blob/main/pass3.PNG' target='_blank'>here</a> .
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;python</div>
+            </div>
+              
+            <button class="btn_one"  onclick=" window.open('https://github.com/obahnean/password-manager')">source code</button>
+            <!-- <button class="btn_two">button 2</button> -->
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about</h1>
+            <section>
+                <h2>about me</h2>
+                <p>
+                   my name is ovidiu bahnean, and i am 28 years old. i was born and raised in a small town in romania, about 20 miles 
+                   away from the border with ukraine. since september 2011 i have been starting to experience the american dream.</p>
+                </p>
+                <p>
+                    i earned my bachelor's of science in computer science in may 2018, after graduating the university of illinois at chicago's
+                    rigurous engineering program. this was in fact just the beginning of my journey. as years have passed, i have been 
+                    involved in front end and full stack roles where i added many valuable skills in my portfolio. 
+                </p>
+                <p>
+                    outside of my professional life, i am an avid sports fan. i prefer sports that have minimal to no interruption like soccer,
+                    but i also like other disciplines such as basketball or tennis. as much as i like watching sports, i also like to practice them
+                    and live a healthy lifestyle.
+                </p>
+            </section>
+            <section>
+                <h2>skills</h2>
+                <p>
+                   i like to think about myself that i own many skills, but these are some important highlights.
+                </p>
+              
+                    <ul>
+                        <li> java</li>
+                        <li> hibernate</li>
+                        <li> spring</li>
+                        <li> html</li>
+                        <li> css</li>
+                        <li> javascript</li>
+                        <li> angular</li>
+                        <li> jquery</li>
+                        <li> sql</li>
+                        <li> python</li>
+                        <li> mongodb</li>
+                        <li> nodejs</li>
+                    </ul>
+                    
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <!-- <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form>  -->
+                    for any inquiries i can be reached at +1 (630) 777 0669 or by email at <a href="mailto:obahnean@gmail.com">obahnean@gmail.com</a>.
+                </p>
+            </section>
+        </div>
+        <!-- <div id="footer">
+            made on earth by a human <br> <a href="https://imfunniee.github.io">imfunny</a>
+        </div> -->
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
